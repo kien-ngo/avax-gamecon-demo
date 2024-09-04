@@ -118,7 +118,10 @@ export function Game() {
 			<div className="w-full max-w-md space-y-4">
 				{!account ? (
 					<ConnectButton
-						connectButton={{ style: { width: "100%" } }}
+						connectButton={{
+							style: { width: "100%" },
+							label: "Sign in to play",
+						}}
 						client={client}
 					/>
 				) : !gameStarted ? (
